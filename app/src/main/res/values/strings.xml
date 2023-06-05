@@ -3,4 +3,9 @@
     <string name="txt_edit_adicionar_um_titulo">Adicionar um titulo</string>
     <string name="txt_edit_conteudo">Conteudo</string>
     <string name="txt_edit_outros">Outros</string>
+    <string name="txt_button_criar">+ Criar</string>
+    <string name="txt_button_excluir">Excluir</string>
+    <string name="txt_titulo">Titulo</string>
+    <string name="txt_conteudo">Conteudo</string>
+    <string name="txt_button_editar">Editar</string>
 </resources>
