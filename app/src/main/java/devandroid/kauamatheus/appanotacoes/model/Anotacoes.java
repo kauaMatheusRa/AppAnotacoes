@@ -4,9 +4,14 @@ public class Anotacoes {
 
     private String titulo;
     private String observacoes;
+    private String anota;
 
     public Anotacoes(){
 
+    }
+
+    public Anotacoes(String anota){
+        this.anota = anota;
     }
 
     public Anotacoes(String titulo, String observacoes) {
@@ -30,11 +35,16 @@ public class Anotacoes {
         this.observacoes = observacoes;
     }
 
+    public String getAnota() {
+        return anota;
+    }
+
+    public void setAnota(String anota) {
+        this.anota = anota;
+    }
+
     @Override
     public String toString() {
-        return "Anotacoes{" +
-                "titulo='" + titulo + '\'' +
-                ", observacoes='" + observacoes + '\'' +
-                '}';
+        return ""+anota;
     }
 }

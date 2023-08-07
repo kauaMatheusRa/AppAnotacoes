@@ -8,4 +8,6 @@
     <string name="txt_titulo">Titulo</string>
     <string name="txt_conteudo">Conteudo</string>
     <string name="txt_button_editar">Editar</string>
+    <string name="txt_categorias">Categorias:</string>
+    <string name="txt_anotacoes">Anotações</string>
 </resources>

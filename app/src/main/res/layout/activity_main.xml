@@ -6,111 +6,115 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <Button
-        android:id="@+id/button_limpar"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
-        android:layout_margin="10dp"
-        android:backgroundTint="#2E2AB7"
-        android:text="@string/txt_button_editar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_salvar"
-        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints">
 
-    <EditText
-        android:id="@+id/editTextTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="@string/txt_edit_adicionar_um_titulo"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints"
-        android:importantForAutofill="no" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextConteudo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/txt_edit_conteudo"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        android:autofillHints="" />
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txt_anotacoes"
+                android:textColor="#2E2AB6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/txt_conteudo"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/txt_titulo"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/txt_titulo"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_finalizar"
-        tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/editTextTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/txt_edit_adicionar_um_titulo"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button_salvar"
-        android:layout_width="114dp"
-        android:layout_height="48dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="68dp"
-        android:backgroundTint="#2E2AB7"
-        android:text="@string/txt_button_criar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitulo"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_conteudo"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button_finalizar"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
-        android:layout_margin="10dp"
-        android:backgroundTint="#2E2AB7"
-        android:text="@string/txt_button_excluir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_limpar"
-        tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/editTextConteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/txt_edit_conteudo"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Anotações"
-        android:textColor="#2E2AB6"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button_salvar"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="68dp"
+                android:backgroundTint="#2E2AB7"
+                android:text="@string/txt_button_criar"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_limpar"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#2E2AB7"
+                android:text="@string/txt_button_editar"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_finalizar"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#2E2AB7"
+                android:text="@string/txt_button_excluir"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/txt_categorias"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
